@@ -10,7 +10,7 @@ h1{ text-align: center;}
 .cell{
     height: 100px;
     width: 100px;
-    display: fleX;
+    display: flex;
     align-items: center;
     justify-content: center;
     font-size: 80px;
@@ -20,7 +20,7 @@ h1{ text-align: center;}
 }
 
 .cell:nth-child(3n){border-right: none;}
-.cell:nth-child(6)~.cell{border-bottom: none;}
+.cell:nth-child(6) ~ .cell{border-bottom: none;}
 
 .board{
     width: 300px;
@@ -32,8 +32,9 @@ h1{ text-align: center;}
 .white {color: white;}
 
 #gameEnd{
-    position: fixe;
+    position: fixed;
     display: none;
+    height: 100%;
     width: 100%;
     top: O; right: O; bottom: O; left: O;
     background-color: black;
